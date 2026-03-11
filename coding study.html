@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Can you see me?</title>
+	</head>
+		<body>
+		<body style="background-image: url('https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyZ2t4cGsxNGQwNHhlaDBvZWFjbDMycXQzNjQyejgzMWo2ZW1yY2kyaSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/Bpm9iMpbGiKg2Q2rM1/200.gif');">
+			<audio controls>
+  			  <source src="https://dl.dropbox.com/scl/fi/5tyzzn0scc7pw2j0g8ogf/Drag-Path.mp3?rlkey=fqtzl7k5kkqqyrudfyx9074nw&st=i3fi66u0&" type="audio/mpeg">
+			</audio>
+			<h1 style="text-align:center;">Is this the end?</h1>
+			<p>Hello,<br>World</p>
+			<div><p>Does this work?</p></div>
+<!-- trial two starts here --> 
+
+    <h2 style="text-align:center;">Will you rot with me?</h2>
+
+    <!-- The form tag defines the form. The action attribute specifies where to send the data (a server-side script), and the method attribute specifies the HTTP method (POST is recommended for sensitive data). -->
+    <form action="/submit_page.php" method="POST">
+        <div style="text-align:center;">
+            <!-- The label tag improves accessibility and usability. The "for" attribute must match the input's "id" attribute to bind them. -->
+            <label for="name">Name:</label>
+            <!-- The input tag creates the input field. The "name" attribute is used to reference the form data on the server side. -->
+            <input type="text" id="name" name="user_name" required>
+        </div>
+        
+        <div style="text-align:center;">
+            <label for="mail">Email:</label>
+            <!-- The type="email" provides client-side validation and specific keyboard layouts on some mobile devices. -->
+            <input type="email" id="mail" name="user_email" required>
+        </div>
+        
+        <div style="text-align:center;">
+            <label for="msg">Message:</label>
+            <!-- The textarea tag defines a multi-line text input control for longer messages. -->
+            <textarea id="msg" name="user_message" rows="4"></textarea>
+        </div>
+
+        <div class="button">
+            <!-- The button type="submit" creates a button that submits the form data to the action URL. -->
+            <div class="button" style="text-align:center;"><button type="submit">Send Message</button>
+        </div>
+    </form>
+
+		</body>
+</html>
